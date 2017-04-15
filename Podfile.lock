@@ -1,4 +1,5 @@
 PODS:
+  - Eureka (2.0.1)
   - Firebase/Auth (3.11.0):
     - Firebase/Core
     - FirebaseAuth (= 3.1.0)
@@ -62,6 +63,7 @@ PODS:
   - Toaster (2.0.1)
 
 DEPENDENCIES:
+  - Eureka
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -72,6 +74,7 @@ DEPENDENCIES:
   - Toaster (~> 2.0)
 
 SPEC CHECKSUMS:
+  Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
   Firebase: b8134e285eb33201115bc688bc5d7f112923bc1f
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
   FirebaseAuth: b436e4ecebe068bf8e8c6e4e29de5756ffe7ee24
@@ -88,6 +91,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Toaster: be65cd48e93a525b2a9cc4bd25a2bfc900e02d9f
 
-PODFILE CHECKSUM: cb920b9c907ad32850b61c359ef7c40118cb650e
+PODFILE CHECKSUM: abf73570d865cb08c410a287ebe6ad3cc218a451
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

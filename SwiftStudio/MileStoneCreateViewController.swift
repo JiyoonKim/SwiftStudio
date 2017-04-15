@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
+import Eureka
 
 class MileCreateData: NSObject {
     public var uid: UInt!
