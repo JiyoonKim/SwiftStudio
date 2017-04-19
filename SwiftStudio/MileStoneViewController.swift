@@ -421,8 +421,24 @@ class MileStoneViewController: UIViewController, UITableViewDataSource, UITableV
               self.modify_milddata(childWantToModify  :  self.miles[sender.tag].uid  )
             
                 
-            let vc = UIStoryboard(name: "MileCreate", bundle: nil).instantiateInitialViewController() as! MileStoneCreateViewController
+            // modified by J yoon -------------------------------------------
+//            let vc = UIStoryboard(name: "MileCreate", bundle: nil).instantiateInitialViewController() as! MileStoneCreateViewController
+            let vc = UIStoryboard(name: "MileCreateForm", bundle: nil).instantiateInitialViewController() as! MileStoneCreateFormViewController
             
+//                vc.mtitle = self.miles[sender.tag].mileTitle
+//                vc.mdetail = self.miles[sender.tag].bodyText
+//                
+//                let dateFormatter = DateFormatter()
+//                
+//                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+//                let selectedDate  = dateFormatter.date(from: ( self.miles[sender.tag].editTime ) )
+//                
+//                vc.mdate = selectedDate
+//                vc.moidfy_uid =  self.miles[sender.tag].uid
+                
+           // modified by J yoon -------------------------------------------
+                
+                
             print("modify info")
             print(self.MileTitleText)
             print(self.MileTitleText)
@@ -439,16 +455,7 @@ class MileStoneViewController: UIViewController, UITableViewDataSource, UITableV
             
             
             
-            vc.mtitle = self.miles[sender.tag].mileTitle
-            vc.mdetail = self.miles[sender.tag].bodyText
             
-            let dateFormatter = DateFormatter()
-            
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-             let selectedDate  = dateFormatter.date(from: ( self.miles[sender.tag].editTime ) )
-            
-           vc.mdate = selectedDate
-           vc.moidfy_uid =  self.miles[sender.tag].uid
             
 
             self.showViewController(vc, true, nil)
@@ -549,7 +556,12 @@ class MileStoneViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBAction func milenewbutton(_ sender: Any) {
         
-        let vc = UIStoryboard(name: "MileCreate", bundle: nil).instantiateInitialViewController() as! MileStoneCreateViewController
+        // modified by J yoon -------------------------------------------
+        // let vc = UIStoryboard(name: "MileCreate", bundle: nil).instantiateInitialViewController() as! MileStoneCreateViewController
+        let vc = UIStoryboard(name: "MileCreateForm", bundle: nil).instantiateInitialViewController() as! MileStoneCreateFormViewController
+        
+        
+        // modified by J yoon -------------------------------------------
         
         
         // 시작
